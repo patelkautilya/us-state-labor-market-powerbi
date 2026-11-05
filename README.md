@@ -4,7 +4,17 @@ An analysis of **seasonally adjusted state unemployment rates and unemployed-per
 
 ## Business question
 
-How did unemployment rates vary across states in 2024–2025, and which areas changed most by year end? The planned Power BI report will use KPI cards, time filters, a state comparison, a monthly trend, and drill interaction. Data gaps are shown explicitly.
+How did unemployment rates vary across states in 2024–2025, and which areas changed most by year end? The two-page Power BI report uses KPI cards, state and time filters, a state comparison, and a monthly trend with a year → quarter → month drill hierarchy. Data gaps are shown explicitly.
+
+## Dashboard
+
+[Open the interactive Power BI report](https://app.powerbi.com/groups/me/reports/2b5f224a-1ae8-430a-a7f1-24591afa103e/53ffa3f96377003a04ec?experience=power-bi) (Power BI access may be required) · [Download the two-page PDF](us-state-labor-market-report.pdf)
+
+![KPI and monthly trend page](labor-dashboard-1.png)
+
+![State comparison and data quality page](labor-dashboard-2.png)
+
+The report's unfiltered **3.80%** KPI is the median across all available state-month rows in 2024–2025. It differs from the **4.2%** median for December 2025 alone. The available-row KPI shows **1,173**, and the highest observed state-month rate is **6.70%**. Selecting Alabama in the state slicer was checked against the curated data: the report changes to a **2.90%** median, **23** available months, and **3.10%** maximum. The October 2025 gap remains blank.
 
 ## Data and validation
 
@@ -33,7 +43,10 @@ These differences describe estimates at two dates; they do not establish a cause
 | `bls_state_laus_2024_2025.csv` | Curated Power BI input; blank values retain the October gap |
 | `validation_summary.json` | Record counts, missingness, and checked KPI values |
 | `FINDINGS.md` | Metric definitions, findings, and interpretation limits |
+| `us-state-labor-market-report.pdf` | Two-page static export of the interactive report |
+| `labor-dashboard-1.png`, `labor-dashboard-2.png` | Dashboard previews for quick review |
 
 ## Limitations
 
 BLS LAUS rates are model-based estimates by place of residence, not direct counts of everyone without a job. State estimates are seasonally adjusted and may be revised. Comparing states requires awareness of sampling uncertainty and local labor-market context. The 2025 October gap must not be interpolated as if observed.
+
