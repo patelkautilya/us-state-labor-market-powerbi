@@ -1,0 +1,30 @@
+{
+  "source": "BLS Local Area Unemployment Statistics (seasonally adjusted state series)",
+  "state_mapping": "https://www2.census.gov/geo/docs/reference/state.txt",
+  "bls_api": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
+  "snapshot_utc": "2026-11-05T06:05:51.737634+00:00",
+  "states_plus_dc": 51,
+  "expected_state_month_rows": 1224,
+  "available_state_month_rows": 1173,
+  "missing_by_month_measure": {
+    "2025-10:rate": 51,
+    "2025-10:unemployed": 51
+  },
+  "december_2025_median_state_rate_pct": 4.2,
+  "december_2025_lowest": [
+    2.2,
+    "Hawaii"
+  ],
+  "december_2025_highest": [
+    6.7,
+    "District of Columbia"
+  ],
+  "december_2024_to_2025_largest_decrease_pp": [
+    "Colorado",
+    -0.5
+  ],
+  "december_2024_to_2025_largest_increase_pp": [
+    "Delaware",
+    1.3
+  ]
+}
